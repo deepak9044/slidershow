@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", Arial, sans-serif;
+  background: #7f9ead;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.card:hover {
+  height: 320px;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+.content h2 {
+  color: #7f9ead;
+}
+
+
+
+
+
+
+.slider-container {
+  width: 400px;
+  height:70%;
+ 
+}
+
+.card-slider {
+  display: flex;
+  animation: slideAnimation 8s linear infinite;
+}
+
+.card {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.imgbox img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+  
+@keyframes slideAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25%, 45% {
+    transform: translateX(-100%);
+  }
+  50%, 70% {
+    transform: translateX(-200%);
+  }
+  75%, 95% {
+    transform: translateX(-300%);
+  }
+  100%, 120% {
+    transform: translateX(-400%);
+  }
+  125%, 145% {
+    transform: translateX(-500%);
+  }
+  150%, 170% {
+    transform: translateX(-600%);
+  }
+  175%, 195% {
+    transform: translateX(-700%);
+  }
+  200%, 220% {
+    transform: translateX(-800%);
+  }
+  225%, 245% {
+    transform: translateX(-900%);
+  }
+  250%, 270% {
+    transform: translateX(-1000%);
+  }
+  275%, 295% {
+    transform: translateX(-1100%);
+  }
+  300%, 320% {
+    transform: translateX(-1200%);
+  }
+  325%, 345% {
+    transform: translateX(-1300%);
+  }
+}
+
+
+
+
+
